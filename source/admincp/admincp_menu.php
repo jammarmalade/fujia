@@ -29,6 +29,7 @@ $topmenu = array (
 	'extended' => '',
 	'plugin' => $isfounder ? 'plugins' : '',
 	'tools' => '',
+	'fujia' => '',
 );
 
 $menu['index'] = array(
@@ -38,7 +39,9 @@ $menu['index'] = array(
 
 $custommenu = get_custommenu();
 $menu['index'] = array_merge($menu['index'], $custommenu);
-
+$menu['fujia'] = array(
+	array('menu_fujia_basic', 'fujia_basic'),
+);
 $menu['global'] = array(
 	array('menu_setting_basic', 'setting_basic'),
 	array('menu_setting_access', 'setting_access'),

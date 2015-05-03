@@ -732,7 +732,10 @@ $lang = array
 	'setting' => '全局设置',
 	'setting_tips' => '<li>以红色虚线标示的选项，表示该选项和系统效率、负载能力与资源消耗有关(提高效率、或降低效率)，建议依据自身服务器情况进行调整。</li>',
 	'setting_multi_tips' => '<li>按住 ALT 键点击单选、复选的选项，可进行横向选择</li>',
-
+	//fujia
+	'fujia_basic' => '富甲基本信息',
+	'fujia_domain' => '富甲网站地址',
+	//
 	'setting_basic' => '站点信息',
 	'setting_basic_bbname' => '站点名称',
 	'setting_basic_bbname_comment' => '站点名称，将显示在浏览器窗口标题等位置',

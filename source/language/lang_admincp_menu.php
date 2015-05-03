@@ -34,8 +34,10 @@ $lang = array
 	'header_safe' => '防灌水',
 	'header_founder' => '站长',
 	'header_cloudaddons' => '应用中心',
-
-
+	//fujia
+	'header_fujia' => '富甲投资',
+	'menu_fujia_basic' => '富甲基本信息',
+	//
 	'menu_home' => '管理中心首页',
 	'menu_home_clearhistorymenus' => '清空历史操作',
 
