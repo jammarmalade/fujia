@@ -14,8 +14,8 @@ $operation = $operation ? $operation : 'basic';
 
 if(!submitcheck('settingsubmit')) {
 
-	showsubmenu('setting_'.$operation);
-	showformheader('setting&edit=yes', 'enctype');
+	showsubmenu('fujia_'.$operation);
+	showformheader('fujia&edit=yes', 'enctype');
 	showhiddenfields(array('operation' => $operation));
 
 	if($operation == 'basic') {
