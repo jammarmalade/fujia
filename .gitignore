@@ -18,4 +18,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # my ignore
+data/
+install/
+config/
 *.ico

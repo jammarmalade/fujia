@@ -1,0 +1,4 @@
+//2015-05-04 09:57
+INSERT z_common_admincp_group VALUES(6,'富甲管理员');
+
+INSERT z_common_admincp_perm VALUES(6,'fujia_basic');
