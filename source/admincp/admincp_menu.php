@@ -29,7 +29,12 @@ $topmenu = array (
 	'extended' => '',
 	'plugin' => $isfounder ? 'plugins' : '',
 	'tools' => '',
-	'fujia' => '',
+	'usermanage' => '',
+	'membermanage' => '',
+	'counselormanage' => '',
+	'productmanage' => '',
+	'infomanage' => '',
+	'goldmanage' => '',
 );
 
 $menu['index'] = array(
@@ -39,8 +44,23 @@ $menu['index'] = array(
 
 $custommenu = get_custommenu();
 $menu['index'] = array_merge($menu['index'], $custommenu);
-$menu['fujia'] = array(
-	array('menu_fujia_basic', 'fujia_basic'),
+$menu['usermanage'] = array(
+	array('menu_usermanage', 'usermanage_basic'),
+);
+$menu['membermanage'] = array(
+	array('menu_membermanage', 'membermanage_basic'),
+);
+$menu['counselormanage'] = array(
+	array('menu_counselormanage', 'counselormanage_basic'),
+);
+$menu['productmanage'] = array(
+	array('menu_productmanage', 'productmanage_basic'),
+);
+$menu['infomanage'] = array(
+	array('menu_infomanage', 'infomanage_basic'),
+);
+$menu['goldmanage'] = array(
+	array('menu_goldmanage', 'goldmanage_basic'),
 );
 $menu['global'] = array(
 	array('menu_setting_basic', 'setting_basic'),
