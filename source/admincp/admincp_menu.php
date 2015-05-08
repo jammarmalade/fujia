@@ -30,13 +30,11 @@ $topmenu = array (
 	'plugin' => $isfounder ? 'plugins' : '',
 	'tools' => '',
 	'usermanage' => '',
-	'membermanage' => '',
-	'counselormanage' => '',
 	'productmanage' => '',
-	'infomanage' => '',
-	'goldmanage' => '',
+	'discovermanage' => '',
+	'advmanage' => '',
+	'trademanage' => '',
 );
-
 $menu['index'] = array(
 	array('menu_home', 'index'),
 	array('menu_custommenu_manage', 'misc_custommenu'),
@@ -45,22 +43,42 @@ $menu['index'] = array(
 $custommenu = get_custommenu();
 $menu['index'] = array_merge($menu['index'], $custommenu);
 $menu['usermanage'] = array(
-	array('menu_usermanage', 'usermanage_basic'),
-);
-$menu['membermanage'] = array(
-	array('menu_membermanage', 'membermanage_basic'),
-);
-$menu['counselormanage'] = array(
-	array('menu_counselormanage', 'counselormanage_basic'),
+	array('menu_membermanage', 'usermanage_member'),
+	array('menu_counselormanage', 'usermanage_counselor'),
+	array('menu_usermanage', 'usermanage_user'),
 );
 $menu['productmanage'] = array(
-	array('menu_productmanage', 'productmanage_basic'),
+	array('menu_product_distribution', 'productmanage_distribution'),
+	array('menu_product_fund', 'productmanage_fund'),
+	array('menu_product_stock', 'productmanage_stock'),
+	array('menu_product_raise', 'productmanage_raise'),
 );
-$menu['infomanage'] = array(
-	array('menu_infomanage', 'infomanage_basic'),
+
+$menu['discovermanage'] = array(
+	array('menu_discover_gold', 'discovermanage_gold'),
+	array('menu_discover_game', 'discovermanage_game'),
+	array('menu_discover_order', 'discovermanage_order'),
+	array('menu_discover_goods', 'discovermanage_goods'),
 );
-$menu['goldmanage'] = array(
-	array('menu_goldmanage', 'goldmanage_basic'),
+
+$menu['advmanage'] = array(
+	array('menu_adv_guide', 'advmanage_guide'),
+	array('menu_adv_popup', 'advmanage_popup'),
+	array('menu_adv_goldhome', 'advmanage_goldhome'),
+	array('menu_adv_product', 'advmanage_product'),
+	array('menu_adv_info', 'advmanage_info'),
+	array('menu_adv_discover', 'advmanage_discover'),
+	array('menu_adv_system', 'advmanage_system'),
+);
+
+$menu['trademanage'] = array(
+	array('menu_trade_fund_investment', 'trademanage_fundinvestment'),
+	array('menu_trade_fund_buy', 'trademanage_fundbuy'),
+	array('menu_trade_stock_buy', 'trademanage_stockbuy'),
+	array('menu_trade_raise_buy', 'trademanage_raisebuy'),
+	array('menu_trade_raise_support', 'trademanage_raisesupport'),
+	array('menu_trade_distribution', 'trademanage_distribution'),
+	array('menu_trade_openaccount', 'trademanage_openaccount'),
 );
 $menu['global'] = array(
 	array('menu_setting_basic', 'setting_basic'),
