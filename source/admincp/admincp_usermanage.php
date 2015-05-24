@@ -139,7 +139,7 @@ SEARCH;
 					showtablerow('', '', array($m['username'],$m['realname'],$m['nickname'],$m['idcard'],$m['balance'],$m['coin'],date('Y-m-d H:i', $m['regtime']),
 						'<a href="admin.php?action=usermanage&operation=member&anchor=update&uid='.$m['id'].'">'.$lang['detail'].'</a>'));
 				}
-				$multipage = multi($membercount, $lpp, $page, ADMINSCRIPT."?action=usermanage&operation=$operation&lpp=$lpp&from=$from");
+				$multipage = multi($membercount, $lpp, $page, ADMINSCRIPT."?action=usermanage&operation=$operation&lpp=$lpp&namevalue=$namevalue&nametype=&nametype&starttime=$starttime&endtime=$endtime&role=$roletype&balancevalue=$balancevalue&balance=$balance&coinvalue=$coinvalue&coin=$coin");
 			}else{
 				showtablerow('', 'colspan=8', array($lang['none']));
 			}
